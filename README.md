@@ -16,7 +16,7 @@ The project follows a practical workflow: **website inspection → scraping stra
 
 The notebooks are in the [`notebooks/` directory](https://github.com/meema29/python-scraper/tree/main/notebooks).
 
-### 1. `website_analysis.ipynb` — Website inspection
+### 1. `website_analysis.ipynb` Website inspection
 
 This notebook investigates Pharmaly before building the scraper.
 
@@ -34,7 +34,7 @@ It covers:
 
 **Main finding:** a simple `requests.get()` retrieves the initial HTML but does not load the additional products fetched by the website's JavaScript. The notebook identifies the underlying WordPress/JetEngine AJAX request needed to retrieve those additional listing pages.
 
-### 2. `scraper.ipynb` — Product collection
+### 2. `scraper.ipynb` Product collection
 
 This notebook turns the website investigation into a collection workflow.
 
@@ -52,7 +52,7 @@ It covers:
 
 The notebook includes both exploratory tests and the consolidated collection logic. The AJAX approach is used because the site's product listings rely on dynamic loading rather than ordinary static pagination.
 
-### 3. `cleaning.ipynb` — Data cleaning and validation
+### 3. `cleaning.ipynb` Data cleaning and validation
 
 This notebook prepares the collected product dataset for downstream use.
 
